@@ -5,23 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research — Benjamin Laubach</title>
   <meta name="description" content="Research highlights from Benjamin Laubach on machine learning for materials discovery, interatomic potentials, and inverse design." />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-  <canvas id="lattice-bg"></canvas>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo"><span class="logo-bracket">[</span>B. Laubach<span class="logo-bracket">]</span></a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="research.html" class="active">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body data-page="research">
+  <header class="site-header" id="site-header"></header>
 
   <main>
     <section class="section page-intro">
@@ -50,7 +37,7 @@
             <p>A framework for selecting and pruning training data for machine-learned interatomic potentials using entropy-based diversity metrics.</p>
           </article>
           <article class="card reveal">
-            <img class="card-img" src="images/publication_toc/cgd_toc.jpeg" alt="Cluster-Graph Fingerprinting schematic" loading="lazy" />
+            <img class="card-img" src="assets/img/publication_toc/cgd_toc.jpeg" alt="Cluster-Graph Fingerprinting schematic" loading="lazy" />
             <span class="card-tag">fingerprinting</span>
             <h3>Cluster-Graph Fingerprinting</h3>
             <p>A quantitative framework for analyzing ML-IAP training and simulation data via graph-based cluster fingerprints, enabling novelty detection and dissimilarity scoring for active learning and uncertainty quantification.</p>
@@ -62,14 +49,14 @@
             <p>Multi-layered machine-learned interatomic models for enhanced simulation efficiency, built on the ChIMES framework.</p>
           </article>
           <article class="card reveal">
-            <img class="card-img" src="images/publication_toc/bayesian_opt_toc.jpg" alt="Cluster-based Bayesian optimization schematic" loading="lazy" />
+            <img class="card-img" src="assets/img/publication_toc/bayesian_opt_toc.jpg" alt="Cluster-based Bayesian optimization schematic" loading="lazy" />
             <span class="card-tag">Bayesian optimization</span>
             <h3>Cluster-based Bayesian optimization</h3>
             <p>A multi-level optimization algorithm that learns cluster-based training data weights for bespoke interatomic potentials, improving force-constant and RDF prediction by an order of magnitude over uniformly-weighted training.</p>
             <a class="card-link" href="publications.html">Read more &rarr;</a>
           </article>
           <article class="card reveal">
-            <img class="card-img" src="images/publication_toc/riem_geo_toc.jpg" alt="Riemannian geometry on a manifold schematic" loading="lazy" />
+            <img class="card-img" src="assets/img/publication_toc/riem_geo_toc.jpg" alt="Riemannian geometry on a manifold schematic" loading="lazy" />
             <span class="card-tag">Riemannian geometry</span>
             <h3>Manifold-aware analysis of SPD matrices</h3>
             <p>Used Riemannian geometry to analyze symmetric positive-definite matrices (covariances, Hessians, images) for anomaly detection in chemical process monitoring, with Dow Chemical and Argonne National Laboratory.</p>
@@ -80,17 +67,8 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Benjamin Laubach</p>
-      <ul class="links">
-        <li><a href="mailto:blaubach@umich.edu">Email</a></li>
-        <li><a href="https://github.com/laubachb" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/benjamin-laubach-3372a4193/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-  </footer>
+  <footer class="site-footer" id="site-footer"></footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
