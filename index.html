@@ -12,19 +12,19 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo"><span class="logo-bracket">[</span>B. Laubach<span class="logo-bracket">]</span></a>
+      <a href="index.html" class="logo"><span class="logo-bracket">[</span>B. Laubach<span class="logo-bracket">]</span></a>
       <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="active">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="about" class="section hero">
+    <section class="section hero">
       <div class="container">
         <p class="kicker reveal">// machine learning &middot; materials science</p>
         <h1 class="reveal">
@@ -50,227 +50,63 @@
           </div>
         </div>
         <div class="hero-cta reveal">
-          <a href="CV_BLaubach_25.docx" class="btn btn-primary" download>Download CV</a>
-          <a href="#research" class="btn btn-ghost">See research &rarr;</a>
+          <a href="BenjaminLaubachCV.pdf" class="btn btn-primary" download>Download CV</a>
+          <a href="research.html" class="btn btn-ghost">See research &rarr;</a>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section class="section">
       <div class="container">
-        <h2 class="reveal"><span class="heading-index">01</span>Experience</h2>
-        <ul class="timeline">
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">PhD Resident — AI for Chemistry</span>
-              <span class="dates">Jan 2026 – Jun 2026</span>
-            </div>
-            <span class="company">Google X &middot; with Dr. John Paul Issa, Thomas Hossler, Prof. Gabe Gomes</span>
-            <p>Architected and deployed an end-to-end MLOps pipeline on Google Cloud Platform (GCP) to run large-scale ML inference over 1M+ partner data points.</p>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">Graduate Research Intern</span>
-              <span class="dates">Jun 2025 – Aug 2025</span>
-            </div>
-            <span class="company">Los Alamos National Laboratory &middot; with Dr. Ying Wai Li, Dr. Christopher Lane</span>
-            <p>Integrated reward shaping and acceleration methods into a Monte Carlo Tree Search algorithm for the inverse design and discovery of heavy-fermion (superconducting) compounds.</p>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">Graduate Research Assistant</span>
-              <span class="dates">May 2023 – Current</span>
-            </div>
-            <span class="company">University of Michigan &middot; with Prof. Rebecca Lindsey</span>
-            <p>Developed uncertainty quantification methods for simulations using machine-learned interatomic potentials (ML-IAP), in collaboration with Lawrence Livermore National Laboratory.</p>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">Undergraduate Research Assistant</span>
-              <span class="dates">Jul 2021 – May 2023</span>
-            </div>
-            <span class="company">University of Wisconsin–Madison &middot; with Prof. Victor Zavala</span>
-            <p>Applied Riemannian geometry to multivariate time-series batch processes with Dow Chemical; identified key process variables in collaboration with Argonne National Laboratory.</p>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">Alternating Term Co-op</span>
-              <span class="dates">May 2021 – Aug 2022</span>
-            </div>
-            <span class="company">Dow Chemical Company</span>
-            <p>Scaled batch production by 25.8% (~$800k/yr profit), cut waste 40% with a Python cleanout model, led capital investment projects, and saved ~$10k per trailer by identifying unsustainable SiH-containing products.</p>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">Undergraduate Research Assistant</span>
-              <span class="dates">Aug 2021 – May 2023</span>
-            </div>
-            <span class="company">Michigan State University &middot; with Prof. John Dorgan</span>
-            <p>Used classification algorithms to sort plastics from near-infrared spectroscopy (NIR) data.</p>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">Undergraduate Research Assistant</span>
-              <span class="dates">Jan 2020 – May 2020</span>
-            </div>
-            <span class="company">Michigan State University &middot; with Prof. Milton Smith</span>
-            <p>Studied iridium-catalyzed C–H borylation chemistry and coupling reactions, with a focus on green-chemistry optimization.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="research" class="section">
-      <div class="container">
-        <h2 class="reveal"><span class="heading-index">02</span>Research Highlights</h2>
-        <div class="card-grid">
-          <article class="card reveal">
-            <span class="card-tag">MCTS &middot; inverse design</span>
-            <h3>ML-accelerated Monte Carlo Tree Search</h3>
-            <p>Integrating machine-learned reward and acceleration methods into MCTS for the inverse design of heavy-fermion (superconducting) quantum materials. Developed with Los Alamos National Laboratory.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-tag">ML-IAP &middot; uncertainty</span>
-            <h3>Uncertainty quantification for ML interatomic potentials</h3>
-            <p>Methods for quantifying the reliability of machine-learned interatomic potential simulations, in collaboration with Lawrence Livermore National Laboratory.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-tag">data curation</span>
-            <h3>Entropy-guided dataset optimization</h3>
-            <p>A framework for selecting and pruning training data for machine-learned interatomic potentials using entropy-based diversity metrics.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-tag">fingerprinting</span>
-            <h3>Cluster-Graph Fingerprinting</h3>
-            <p>A quantitative framework for analyzing ML-IAP training and simulation data via graph-based cluster fingerprints. Published on ChemRxiv.</p>
-            <a class="card-link" href="https://doi.org/10.26434/chemrxiv-2025-vr0cs" target="_blank" rel="noopener">Read paper &rarr;</a>
-          </article>
-          <article class="card reveal">
-            <span class="card-tag">simulation efficiency</span>
-            <h3>TurboChIMES</h3>
-            <p>Multi-layered machine-learned interatomic models for enhanced simulation efficiency, built on the ChIMES framework.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-tag">Bayesian optimization</span>
-            <h3>Cluster-based Bayesian optimization</h3>
-            <p>Application-specific interatomic potential training accelerated through cluster-based Bayesian optimization strategies.</p>
-          </article>
+        <div class="quick-grid">
+          <a href="experience.html" class="quick-card reveal">
+            <span class="card-tag">01</span>
+            <h3>Experience</h3>
+            <p>Google X, Los Alamos National Lab, and graduate research at Michigan.</p>
+          </a>
+          <a href="research.html" class="quick-card reveal">
+            <span class="card-tag">02</span>
+            <h3>Research</h3>
+            <p>ML-accelerated search, interatomic potentials, and uncertainty quantification.</p>
+          </a>
+          <a href="publications.html" class="quick-card reveal">
+            <span class="card-tag">03</span>
+            <h3>Publications</h3>
+            <p>Papers in prep, submitted, and published across ML for materials.</p>
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="publications" class="section">
+    <section class="section">
       <div class="container">
-        <h2 class="reveal"><span class="heading-index">03</span>Publications</h2>
-        <ol class="pub-list">
-          <li class="reveal">
-            <span class="pub-status">in prep</span>
-            Laubach B., Liu S., Allen K., Riedel Z., Watkins A., Rosa P., Thomas S., Bauer E., Ronning F., Lindsey R., Zhu J., Lane C., Li Y. <em>Machine learning accelerated monte carlo tree search for inverse design of quantum materials.</em>
-          </li>
-          <li class="reveal">
-            <span class="pub-status">in prep</span>
-            Laubach B., Vita J., Bushick K., Williams L., Lindsey R., Lordi V. <em>Entropy-guided dataset optimization for machine-learned interatomic potentials.</em>
-          </li>
-          <li class="reveal">
-            <span class="pub-status">submitted</span>
-            Oladipupo A., Laubach B., Almohri S., Lindsey R. <em>TurboChIMES: Multi-Layered Machine-Learned Interatomic Models for Enhanced Simulation Efficiency.</em>
-          </li>
-          <li class="reveal">
-            <span class="pub-status">submitted</span>
-            Vita J., Stimac J., Williams L., Fan Y., Buschick K., Hamel S., Samanta A., Laubach B., Lindsey R., Lordi V. <em>Cluster-based Bayesian optimization for application-specific interatomic potential training.</em>
-          </li>
-          <li class="reveal">
-            <span class="pub-status">2025</span>
-            Laubach B., Lordi V., Lindsey R. <em>Cluster-Graph Fingerprinting: A Framework for Quantitative Analysis of Machine-Learned Interatomic Model Training and Simulation Data.</em> ChemRxiv.
-            <a href="https://doi.org/10.26434/chemrxiv-2025-vr0cs" target="_blank" rel="noopener">doi:10.26434/chemrxiv-2025-vr0cs</a>
-          </li>
-          <li class="reveal">
-            <span class="pub-status">2022</span>
-            Smith A., Laubach B., Castillo I., Zavala V.M. <em>Data analysis using Riemannian geometry and applications to chemical engineering.</em> Computers &amp; Chemical Engineering 168, 108023.
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <h2 class="reveal"><span class="heading-index">04</span>Education</h2>
-        <ul class="timeline">
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">PhD, Chemical Engineering &amp; Scientific Computing</span>
-              <span class="dates">Expected May 2028</span>
-            </div>
-            <span class="company">University of Michigan, Ann Arbor &middot; NSF Graduate Research Fellow</span>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">M.S.E., Chemical Engineering</span>
-              <span class="dates">May 2024</span>
-            </div>
-            <span class="company">University of Michigan, Ann Arbor</span>
-          </li>
-          <li class="reveal">
-            <div class="timeline-meta">
-              <span class="role">B.S., Chemical Engineering with Honors</span>
-              <span class="dates">May 2023</span>
-            </div>
-            <span class="company">Michigan State University &middot; GPA 3.90/4.00</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="reveal"><span class="heading-index">05</span>Skills</h2>
-        <div class="skills-grid reveal">
-          <div class="skill-group">
-            <h4>Languages</h4>
-            <div class="tag-row">
-              <span class="tag">Python</span>
-              <span class="tag">C++</span>
-              <span class="tag">MATLAB</span>
-              <span class="tag">Bash</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h4>Computing</h4>
-            <div class="tag-row">
-              <span class="tag">Jupyter</span>
-              <span class="tag">HPC (Great Lakes, Stampede3, LLNL, LANL)</span>
-              <span class="tag">GCP</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h4>Methods</h4>
-            <div class="tag-row">
-              <span class="tag">Machine-learned interatomic potentials</span>
-              <span class="tag">Monte Carlo Tree Search</span>
-              <span class="tag">Bayesian optimization</span>
-              <span class="tag">Uncertainty quantification</span>
-            </div>
-          </div>
+        <h2 class="reveal"><span class="heading-index">&middot;</span>Off the Clock</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal">
+            <img src="images/personal/kayaking.jpg" alt="Kayaking past the cliffs at Pictured Rocks National Lakeshore" loading="lazy" />
+            <figcaption>Kayaking at Pictured Rocks</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/personal/race.jpg" alt="Group photo after the Dexter-Ann Arbor Run" loading="lazy" />
+            <figcaption>Dexter–Ann Arbor Run</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/personal/ice-skating.jpg" alt="Ice skating outdoors on a winter evening" loading="lazy" />
+            <figcaption>Winter ice skating</figcaption>
+          </figure>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="reveal"><span class="heading-index">06</span>Contact</h2>
-        <ul class="links reveal">
-          <li><a href="mailto:blaubach@umich.edu">Email</a></li>
-          <li><a href="https://github.com/laubachb" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/benjamin-laubach-3372a4193/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="CV_BLaubach_25.docx" download>Download CV</a></li>
-        </ul>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>&copy; <span id="year"></span> Benjamin Laubach</p>
+      <ul class="links">
+        <li><a href="mailto:blaubach@umich.edu">Email</a></li>
+        <li><a href="https://github.com/laubachb" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/benjamin-laubach-3372a4193/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </div>
   </footer>
 

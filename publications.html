@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications — Benjamin Laubach</title>
+  <meta name="description" content="Publications by Benjamin Laubach on machine learning for materials discovery and interatomic potentials." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="lattice-bg"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-bracket">[</span>B. Laubach<span class="logo-bracket">]</span></a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html" class="active">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <p class="kicker reveal">// papers &amp; preprints</p>
+        <h1 class="page-title reveal">Publications</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <ol class="pub-list">
+          <li class="reveal">
+            <span class="pub-status">in prep</span>
+            Laubach B., Liu S., Allen K., Riedel Z., Watkins A., Rosa P., Thomas S., Bauer E., Ronning F., Lindsey R., Zhu J., Lane C., Li Y. <em>Machine learning accelerated monte carlo tree search for inverse design of quantum materials.</em>
+          </li>
+          <li class="reveal">
+            <span class="pub-status">in prep</span>
+            Laubach B., Vita J., Bushick K., Williams L., Lindsey R., Lordi V. <em>Entropy-guided dataset optimization for machine-learned interatomic potentials.</em>
+          </li>
+          <li class="reveal">
+            <span class="pub-status">submitted</span>
+            Oladipupo A., Laubach B., Almohri S., Lindsey R. <em>TurboChIMES: Multi-Layered Machine-Learned Interatomic Models for Enhanced Simulation Efficiency.</em>
+          </li>
+          <li class="reveal pub-item">
+            <div class="pub-row">
+              <img class="pub-thumb" src="images/publication_toc/bayesian_opt_toc.jpg" alt="Cluster-based Bayesian optimization schematic" loading="lazy" />
+              <div class="pub-body">
+                <span class="pub-status">submitted</span>
+                Vita J., Stimac J., Williams L., Fan Y., Buschick K., Hamel S., Samanta A., Laubach B., Lindsey R., Lordi V. <em>Cluster-based Bayesian optimization for application-specific interatomic potential training.</em>
+                <details class="pub-abstract">
+                  <summary>Abstract</summary>
+                  <p>While significant strides have been made to develop universal (foundation) interatomic potentials, these models are often too computationally expensive for large-scale molecular dynamics or lack the necessary accuracy for certain applications due to the use of overly-general training sets. We develop a multi-level optimization algorithm that uses cluster-based training to efficiently learn training data weights that are optimally informative for the properties of interest while simultaneously optimizing model hyperparameters and maintaining transferability. Demonstrated on a bespoke SNAP model for carbon, this approach shows an order-of-magnitude improvement in prediction of force constants and radial distribution functions over a baseline model trained on the full dataset. We compare HDBSCAN and k-means clustering with bispectrum descriptors, autoencoder embeddings, and pre-trained interatomic potential embeddings, finding HDBSCAN performs best with structure descriptors that closely match those used during inference.</p>
+                </details>
+              </div>
+            </div>
+          </li>
+          <li class="reveal pub-item">
+            <div class="pub-row">
+              <img class="pub-thumb" src="images/publication_toc/cgd_toc.jpeg" alt="Cluster-Graph Fingerprinting schematic" loading="lazy" />
+              <div class="pub-body">
+                <span class="pub-status">2025</span>
+                Laubach B.R., Lordi V., Lindsey R.K. <em>Cluster-Graph Fingerprinting: A Framework for Quantitative Analysis of Machine-Learned Interatomic Model Training and Simulation Data.</em> Journal of Chemical Information and Modeling, ACS Publications.
+                <a href="https://doi.org/10.26434/chemrxiv-2025-vr0cs" target="_blank" rel="noopener">preprint: doi:10.26434/chemrxiv-2025-vr0cs</a>
+                <details class="pub-abstract">
+                  <summary>Abstract</summary>
+                  <p>Machine-learned interatomic models represent a significant advancement in simulation methods, extending the predictive ability of first-principles methods to previously inaccessible length and time scales. However, the data-driven nature of these models can lead to difficult-to-detect errors that compromise prediction accuracy. We introduce a novel fingerprinting approach based on the ChIMES ML-IAM graph-based descriptor that enables efficient, statistically rigorous analysis of configurations used in ML-IAM training and those generated in application (e.g., molecular dynamics simulations). We show these fingerprints effectively assess the novelty of a configuration relative to an existing dataset and quantify dissimilarity among configurations — two key tasks for active learning, dataset curation, and on-the-fly uncertainty quantification.</p>
+                </details>
+              </div>
+            </div>
+          </li>
+          <li class="reveal pub-item">
+            <div class="pub-row">
+              <img class="pub-thumb" src="images/publication_toc/riem_geo_toc.jpg" alt="Riemannian geometry on a manifold schematic" loading="lazy" />
+              <div class="pub-body">
+                <span class="pub-status">2022</span>
+                Smith A., Laubach B., Castillo I., Zavala V.M. <em>Data analysis using Riemannian geometry and applications to chemical engineering.</em> Computers &amp; Chemical Engineering 168, 108023.
+                <details class="pub-abstract">
+                  <summary>Abstract</summary>
+                  <p>We explore the use of tools from Riemannian geometry for the analysis of symmetric positive definite (SPD) matrices. An SPD matrix is a versatile data representation commonly used in chemical engineering (e.g., covariance/correlation/Hessian matrices and images), and powerful techniques are available for its analysis (e.g., principal component analysis). A key observation motivating this work is that SPD matrices live on a Riemannian manifold, and exploiting this basic property can yield significant benefits in data-centric tasks such as classification and dimensionality reduction. We demonstrate this via case studies that conduct anomaly detection in the context of process monitoring and image analysis.</p>
+                </details>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Benjamin Laubach</p>
+      <ul class="links">
+        <li><a href="mailto:blaubach@umich.edu">Email</a></li>
+        <li><a href="https://github.com/laubachb" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/benjamin-laubach-3372a4193/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

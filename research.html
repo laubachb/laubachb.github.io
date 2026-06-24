@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Benjamin Laubach</title>
+  <meta name="description" content="Research highlights from Benjamin Laubach on machine learning for materials discovery, interatomic potentials, and inverse design." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="lattice-bg"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-bracket">[</span>B. Laubach<span class="logo-bracket">]</span></a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <p class="kicker reveal">// research highlights</p>
+        <h1 class="page-title reveal">Research</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="card-tag">MCTS &middot; inverse design</span>
+            <h3>ML-accelerated Monte Carlo Tree Search</h3>
+            <p>Integrating machine-learned reward and acceleration methods into MCTS for the inverse design of heavy-fermion (superconducting) quantum materials. Developed with Los Alamos National Laboratory.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-tag">ML-IAP &middot; uncertainty</span>
+            <h3>Uncertainty quantification for ML interatomic potentials</h3>
+            <p>Methods for quantifying the reliability of machine-learned interatomic potential simulations, in collaboration with Lawrence Livermore National Laboratory.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-tag">data curation</span>
+            <h3>Entropy-guided dataset optimization</h3>
+            <p>A framework for selecting and pruning training data for machine-learned interatomic potentials using entropy-based diversity metrics.</p>
+          </article>
+          <article class="card reveal">
+            <img class="card-img" src="images/publication_toc/cgd_toc.jpeg" alt="Cluster-Graph Fingerprinting schematic" loading="lazy" />
+            <span class="card-tag">fingerprinting</span>
+            <h3>Cluster-Graph Fingerprinting</h3>
+            <p>A quantitative framework for analyzing ML-IAP training and simulation data via graph-based cluster fingerprints, enabling novelty detection and dissimilarity scoring for active learning and uncertainty quantification.</p>
+            <a class="card-link" href="publications.html">Read more &rarr;</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-tag">simulation efficiency</span>
+            <h3>TurboChIMES</h3>
+            <p>Multi-layered machine-learned interatomic models for enhanced simulation efficiency, built on the ChIMES framework.</p>
+          </article>
+          <article class="card reveal">
+            <img class="card-img" src="images/publication_toc/bayesian_opt_toc.jpg" alt="Cluster-based Bayesian optimization schematic" loading="lazy" />
+            <span class="card-tag">Bayesian optimization</span>
+            <h3>Cluster-based Bayesian optimization</h3>
+            <p>A multi-level optimization algorithm that learns cluster-based training data weights for bespoke interatomic potentials, improving force-constant and RDF prediction by an order of magnitude over uniformly-weighted training.</p>
+            <a class="card-link" href="publications.html">Read more &rarr;</a>
+          </article>
+          <article class="card reveal">
+            <img class="card-img" src="images/publication_toc/riem_geo_toc.jpg" alt="Riemannian geometry on a manifold schematic" loading="lazy" />
+            <span class="card-tag">Riemannian geometry</span>
+            <h3>Manifold-aware analysis of SPD matrices</h3>
+            <p>Used Riemannian geometry to analyze symmetric positive-definite matrices (covariances, Hessians, images) for anomaly detection in chemical process monitoring, with Dow Chemical and Argonne National Laboratory.</p>
+            <a class="card-link" href="publications.html">Read more &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Benjamin Laubach</p>
+      <ul class="links">
+        <li><a href="mailto:blaubach@umich.edu">Email</a></li>
+        <li><a href="https://github.com/laubachb" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/benjamin-laubach-3372a4193/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
