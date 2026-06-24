@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "name": "MCTS for Materials",
+    "description": "Monte Carlo Tree Search framework for inverse design of correlated quantum materials, built with the MACE-MP-0 ML potential as a DFT surrogate. Developed at Los Alamos National Laboratory.",
+    "url": "https://github.com/lanl/mcts-materials",
+    "tags": ["MCTS", "inverse design", "LANL"]
+  },
+  {
+    "name": "ChIMES-LSQ GPU Acceleration",
+    "description": "GPU-accelerated least-squares fitting for training ChIMES machine-learned interatomic potentials.",
+    "url": "https://github.com/laubachb/chimes_lsq-myLLfork/tree/laubachb/gpu-acceleartion",
+    "tags": ["GPU", "ChIMES", "MLIP training"]
+  },
+  {
+    "name": "ChIMES Calculator GPU Acceleration",
+    "description": "GPU-accelerated force and energy evaluation for ChIMES molecular dynamics simulations.",
+    "url": "https://github.com/laubachb/chimes_calculator-myLLfork/tree/laubachb/gpu-acceleration",
+    "tags": ["GPU", "ChIMES", "molecular dynamics"]
+  },
+  {
+    "name": "ChIMES GPU Acceleration Benchmark Study",
+    "description": "Benchmarking study quantifying speedups from GPU-accelerated ChIMES training and molecular dynamics.",
+    "url": "https://github.com/laubachb/UMich-chimes_gpu_acceleration_study",
+    "tags": ["benchmarking", "GPU", "ChIMES"]
+  },
+  {
+    "name": "D-Optimal Active Learning for ChIMES UQ",
+    "description": "D-optimality-based active learning driver for uncertainty quantification within ChIMES interatomic potential training.",
+    "url": "https://github.com/S-A-Almohri/al_driver-MyLLfork/tree/feature-branch",
+    "tags": ["active learning", "uncertainty quantification", "ChIMES"]
+  },
+  {
+    "name": "ChIMES Multielement Fingerprint Analysis",
+    "description": "Extending cluster-graph fingerprinting to multielement systems for analyzing ML-IAP training and simulation data.",
+    "url": "https://github.com/laubachb/UMich-multielement_fingerprint_study",
+    "tags": ["fingerprinting", "ChIMES", "multielement"]
+  }
+]
