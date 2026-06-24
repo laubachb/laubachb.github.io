@@ -52,7 +52,7 @@ function, and training set force mean absolute errors.
 
 Citation:
 @article{laubach2025quests,
-  title={Group-aware adaptive pruning of machine-learned interatomic potential training data using QUESTS entropy},
+  title={Entropy-Guided Dataset Optimization for Machine-Learned Interatomic Potentials},
   author={Laubach, Benjamin and Vita, Joshua and Bushick, Kyle and Williams, Logan and Lindsey, Rebecca and Lordi, Vincenzo},
   journal={In preparation},
   year={2026}
